@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sample Webpack App</title>
     <link rel="stylesheet" href="/src/style.css">
-
+    <script src="https://kit.fontawesome.com/0824f44e49.js" crossorigin="anonymous"></script>
+    <script src="./src/index.js" type="module"></script>
   </head>
   <body>
 <script src="/bundle.js"></script>
@@ -18,7 +19,61 @@
     <li><a href="#news">Favorites</a></li>
   </ul>
 </div>
-
+<div class="sub-page-container">
+  <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input class="search-box" placeholder="Search For Country...">
+  </div>
+  <div class="forecast-container">
+    <div class="current-forecast">
+      <div class="forecast">
+        <img class="forecast-img" src="https://www.accuweather.com/images/weathericons/8.svg">
+        <p>Tel Aviv<br>38 C</p>
+      </div>
+      <div class="add-to-favorite">
+        <i class="fas fa-heart"></i>
+        <button class="favorite-button">Add To Favorites</button>
+      </div>
+    </div>
+    <div class="five-day-forecast">
+      <div class="forecast-card">
+        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+      <div class="forecast-card">
+        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+      <div class="forecast-card">
+        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+      <div class="forecast-card">
+        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+      <div class="forecast-card">
+        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
