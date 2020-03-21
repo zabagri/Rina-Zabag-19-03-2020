@@ -10,70 +10,75 @@
     <script src="./src/index.js" type="module"></script>
   </head>
   <body>
-<script src="/bundle.js"></script>
-
-<div class="top-bar">
-  <p class="logo">Herolo weather task</p>
-  <ul>
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">Favorites</a></li>
-  </ul>
-</div>
-<div class="sub-page-container">
-  <div class="search-container">
-    <i class="fas fa-search"></i>
-    <input class="search-box" placeholder="Search For Country...">
-  </div>
-  <div class="forecast-container">
-    <div class="current-forecast">
-      <div class="forecast">
-        <img class="forecast-img" src="https://www.accuweather.com/images/weathericons/8.svg">
-        <p>Tel Aviv<br>38 C</p>
+    <div class="top-bar">
+      <p class="logo">Herolo weather task</p>
+      <ul class="top-bar-links">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+      </ul>
+    </div>
+    <div id="#home" class="sub-page-container">
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input class="search-box" placeholder="Search For Country...">
       </div>
-      <div class="add-to-favorite">
-        <i class="fas fa-heart"></i>
-        <button class="favorite-button">Add To Favorites</button>
+      <div class="city-list-container">
+        <ul class="city-list">
+        </ul>
+      </div>
+      <div class="forecast-container">
+        <div class="current-forecast">
+          <div class="forecast">
+            <img class="forecast-img" src="https://www.accuweather.com/images/weathericons/8.svg">
+            <div class="current-teperature">
+              <p class="temperature-city">Tel Aviv</p>
+              <p class="temperature-value">38° C</p>
+            </div>
+          </div>
+          <div class="add-to-favorite">
+            <i class="fas fa-heart"></i>
+            <button class="favorite-button">Add To Favorites</button>
+          </div>
+        </div>
+        <div class="five-day-forecast">
+          <div class="forecast-card">
+            <img class="weekly-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+            <div class="container">
+              <h4 class="week-day"><b>John Doe</b></h4>
+              <p class="weekly-temperature">Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <img class="weekly-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+            <div class="container">
+              <h4 class="week-day"><b>John Doe</b></h4>
+              <p class="weekly-temperature">Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <img class="weekly-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+            <div class="container">
+              <h4 class="week-day"><b>John Doe</b></h4>
+              <p class="weekly-temperature">Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <img class="weekly-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+            <div class="container">
+              <h4 class="week-day"><b>John Doe</b></h4>
+              <p class="weekly-temperature">Architect & Engineer</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <img class="weekly-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
+            <div class="container">
+              <h4 class="week-day"><b>John Doe</b></h4>
+              <p class="weekly-temperature">Architect & Engineer</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="five-day-forecast">
-      <div class="forecast-card">
-        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
-      <div class="forecast-card">
-        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
-      <div class="forecast-card">
-        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
-      <div class="forecast-card">
-        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
-      <div class="forecast-card">
-        <img src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-          <h4><b>John Doe</b></h4>
-          <p>Architect & Engineer</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-</body>
+    <div id="#favorites" class="sub-page-container"></div>
+  </body>
 </html>
