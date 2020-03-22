@@ -1,5 +1,6 @@
 const config = {
     apiKey: "7UTfGvM5vbMWwWWqxmO604F3SrKDniJX",
+    defaultCityKey: "215854",
     autoCompleteUrl: {
         basePath: "http://dataservice.accuweather.com/locations/v1/cities/autocomplete"
     },
