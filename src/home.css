@@ -1,0 +1,150 @@
+.search-box {
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 0.5rem 5rem 0.5rem 2rem;
+}
+
+.search-container {
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+}
+
+.fa-search {
+    z-index: 2;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-right: -27px;
+}
+
+.search-box:focus {
+    outline-width: 0;
+    box-shadow: 0px 1px 10px white;
+}
+
+.city-list-container {
+    position: relative;
+}
+
+.city-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 -8rem;
+    position:absolute;
+    display: inline-block;
+    height: 10rem;
+    overflow: auto;
+}
+
+.city-list li {
+    border: 1px solid #ddd;
+    background-color: #f6f6f6;
+    padding: 5px 3rem;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+}
+
+.city-list li:hover {
+    background-color: lightgray;
+}
+
+.home-page-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forecast-container {
+    background: #fff7f778;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.current-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast {
+    display: flex;
+    margin-left: 1.5rem;
+}
+
+.forecast-img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.current-teperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.temperature-city {
+    padding: 0;
+    margin: 2rem 0 0;
+}
+
+.temperature-value {
+    margin: 0 0 1rem;
+}
+.add-to-favorite {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.fa-heart {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    text-shadow: 0 0 5px #000;
+    color: gray;
+}
+
+.favorite-button {
+    background-color: #7c807c;
+    color: white;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.favorite-button:hover {
+    background-color: #111;
+    color: white;
+}
+
+.favorite-button:focus {
+    outline-width: 0;
+}
+
+.five-day-forecast {
+    display: flex;
+    justify-content: space-around;
+}
+
+.forecast-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 25px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forecast-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.weekly-img {
+    width: 80% !important;
+    margin-top: 0.5rem;
+}
