@@ -16,13 +16,14 @@ function readyHome() {
     document.getElementsByClassName("remove-favorite-button")[0].style.display = "block";
   }
 
-  weatherApi.getCurrentWeather(config.defaultCityKey, (data) => {
+  weatherApi.getCurrentWeather(state.key, (data) => {
         var currentWeather = data;
+        document.getElementsByClassName("temperature-city")[0].innerHTML = state.name;
         document.getElementsByClassName("temperature-value")[0].innerHTML = Math.round(currentWeather.temperature) + "° C";
         document.getElementsByClassName("forecast-img")[0].src = "https://www.accuweather.com/images/weathericons/" + currentWeather.icon +".svg";
     });
         
-    weatherApi.getFiveDayForecast(config.defaultCityKey, (data) => {
+    weatherApi.getFiveDayForecast(state.key, (data) => {
         var dailyForecasts = data.forecasts;
         var i = 0;
         for (i = 0; i < 5; i++) {
@@ -66,8 +67,7 @@ function readyHome() {
                           document.getElementsByClassName("forecast-img")[0].src = "https://www.accuweather.com/images/weathericons/" + currentWeather.icon +".svg";
                       });
                       weatherApi.getFiveDayForecast(cityKey, (data) => {
-                          var fiveDayForecast = data.forecasts;
-                          var dailyForecasts = fiveDayForecast["DailyForecasts"];
+                          var dailyForecasts = data.forecasts;
                           var i = 0;
                           for (i = 0; i < 5; i++) {
                               document.getElementsByClassName("weekly-img")[i].src = "https://www.accuweather.com/images/weathericons/" + dailyForecasts[i].Day.Icon +".svg";
@@ -97,8 +97,6 @@ function readyHome() {
       document.getElementsByClassName("remove-favorite-button")[0].style.display = "none";
     });
 }
-
-
 
 function getWeekDay(day) {
   switch (day) {
