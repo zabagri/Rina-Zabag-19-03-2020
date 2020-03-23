@@ -21,6 +21,7 @@ const routes =
             <div class="add-to-favorite">
             <i class="fas fa-heart"></i>
             <button class="favorite-button">Add To Favorites</button>
+            <button class="remove-favorite-button">Remove From Favorites</button>
             </div>
         </div>
         <div class="five-day-forecast">
@@ -63,14 +64,6 @@ const routes =
         </div>
     </div>`,
      '/favorites': `<div class="favorites">
-        <div class="favorite-card">
-        <img class="favorite-img" src="https://www.accuweather.com/images/weathericons/8.svg" style="width:100%">
-        <div class="container">
-            <h4 class="city"><b>skksdfm</b></h4>
-            <p class="temperature">smdlasm</p>
-            <p class="verbal-temperature">samkdlkasd</p>
-        </div>
-        </div>
     </div>`
     };
 

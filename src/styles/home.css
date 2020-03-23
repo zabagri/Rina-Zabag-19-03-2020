@@ -106,7 +106,7 @@
     color: gray;
 }
 
-.favorite-button {
+.favorite-button, .remove-favorite-button {
     background-color: #7c807c;
     color: white;
     border-radius: 30px;
@@ -115,7 +115,11 @@
     cursor: pointer;
 }
 
-.favorite-button:hover {
+.remove-favorite-button {
+    display: none;
+}
+
+.favorite-button:hover, .remove-favorite-button:hover {
     background-color: #111;
     color: white;
 }
@@ -140,11 +144,43 @@
     align-items: center;
 }
 
-.forecast-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 .weekly-img {
     width: 80% !important;
     margin-top: 0.5rem;
+}
+
+@media(max-width:700px) {
+    .home-page-container {
+        margin: 0 auto;
+    }
+
+    .search-container{
+        margin-top: 8rem;
+    }
+
+    .forecast-container {
+        width: 100%;
+    }
+
+    .forecast {
+        margin-left: 0.5rem;
+    }
+
+    .add-to-favorite {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 0.5rem;
+    }
+
+    .fa-heart {
+        font-size: 1.5rem;
+    }
+
+    .favorite-button, .remove-favorite-button {
+        font-size: 9px;
+    }
+
+    .five-day-forecast {
+        flex-direction: column;
+    }
 }
