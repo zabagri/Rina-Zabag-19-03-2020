@@ -1,6 +1,6 @@
 const routes =
     {
-    '/': `<div class="home-page-container">
+    '/#home': `<div class="home-page-container">
     <div class="search-container">
         <i class="fas fa-search"></i>
         <input class="search-box" placeholder="Search For Country...">
@@ -63,7 +63,7 @@ const routes =
         </div>
         </div>
     </div>`,
-     '/favorites': `<div class="favorites">
+     '/#favorites': `<div class="favorites">
     </div>`
     };
 
