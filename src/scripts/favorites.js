@@ -36,12 +36,7 @@ function readyFavorites() {
                 favoriteDiv.addEventListener("click", () => {
                     stateModule.changeState({key: cityKey, name: cityName});
                     var contentDiv = document.getElementsByClassName('sub-page-container')[0];
-                    window.history.pushState(
-                        {},
-                        '/',
-                        window.location.origin + "/Rina-Zabag-19-03-2020" + '/'
-                      );
-                    contentDiv.innerHTML = routes['/'];
+                    contentDiv.innerHTML = routes['/#home'];
                     document.getElementById("home").classList.add("active");
                     document.getElementById("favorites").classList.remove("active");
                     readyHome();
