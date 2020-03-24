@@ -39,7 +39,7 @@ function readyFavorites() {
                     window.history.pushState(
                         {},
                         '/',
-                        window.location.origin + '/'
+                        window.location.origin + "/Rina-Zabag-19-03-2020" + '/'
                       );
                     contentDiv.innerHTML = routes['/'];
                     document.getElementById("home").classList.add("active");
