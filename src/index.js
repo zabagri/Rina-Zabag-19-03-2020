@@ -21,7 +21,7 @@ function onNavItemClick (pathName) {
 }
 
 window.onpopstate = () => {
-    contentDiv.innerHTML = routes[window.location.pathname];
+    contentDiv.innerHTML = routes[window.location.pathname.replace("/Rina-Zabag-19-03-2020", "")];
 }
 
 document.getElementById("home").onclick = function () {
