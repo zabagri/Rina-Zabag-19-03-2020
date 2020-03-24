@@ -8,6 +8,9 @@ function getAsync(theUrl, callback)
     }
     xmlHttp.open("GET", theUrl, true);
     xmlHttp.send(null);
+    xmlHttp.onerror = function () {
+      modal.style.display = "block";
+    };
   } catch(e) {
     //display error modal
     modal.style.display = "block";

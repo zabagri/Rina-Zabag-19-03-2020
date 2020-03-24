@@ -4,7 +4,6 @@ import readyFavorites from './scripts/favorites.js'
 
 var contentDiv = document.getElementsByClassName('sub-page-container')[0];
 function ready() {
-
     contentDiv.innerHTML = routes['/'];
     document.getElementById("home").classList.add("active");
     readyHome();
